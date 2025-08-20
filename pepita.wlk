@@ -22,8 +22,9 @@ object alpiste {
 
 object manzana {
 	var madurez = 1
+	const base = 5
 	method valorEnergetico() {
-		return 5 * madurez
+		return base * madurez
 	}
   method madurar() {
 		madurez = madurez + 0.1 * self.valorEnergetico()
