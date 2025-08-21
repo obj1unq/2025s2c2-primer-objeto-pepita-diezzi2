@@ -26,7 +26,10 @@ object manzana {
 	method valorEnergetico() {
 		return base * madurez
 	}
-  method madurar() {
+	method madurez(_madurez) {
+		madurez = _madurez
+	}
+    method madurar() {
 		madurez = madurez + 0.1 * self.valorEnergetico()
 	}
 }
